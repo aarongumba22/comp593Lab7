@@ -1,5 +1,11 @@
-
-
+#Comp593 lab 7
+#
+#created by Aaron Gumba
+#April 4,2022
+#
+#
+########################
+#initializing data
 def main():
     student_info = {
         'name': 'Aaron Gumba',
@@ -30,6 +36,7 @@ def main():
     new_toppings = ["Pineaple","Fennel"]
     add_pizza(student_info,new_toppings)
 
+    #calls the funcion that prints data
     print_info(student_info)
 
 def add_pizza(person_info, pizza_top):
@@ -44,25 +51,20 @@ def add_pizza(person_info, pizza_top):
     tuple(tuple_mode)
 
 
+#this is the structure of the output
 
 def print_info(person_info):
     name = person_info ['name']
     id_num = person_info['student_id']
     
-    #toppings = person_info ['pizza_top']
-    
-
-
     print("Hi Joe, my name is ",name, "and my student Id is",str(id_num) +".")
-    #print("My ideal pizza has", toppings)
+    
     ingre= []
     for i in person_info['pizza_top']:
 
         bob=i 
         ingre.append(bob)
     print("My ideal pizza has" ,ingre[0],ingre[1],ingre[2],ingre[3],ingre[4] ,"and",ingre[-1] +".")
-
-
 
     move_genre= []
     for i in person_info['Movies']:
@@ -77,15 +79,14 @@ def print_info(person_info):
     
         title= i['Title']
         move_title.append(title)
+
     print("Some of my favourite are", move_title[0],move_title[1],move_title[2]+".")
 
         
 
    
         
-    #print("I like to watch", movies_genre, "movies.")
-    #print("Some of my favourites", movies_title, "!")
-    
+  
 
 
 
