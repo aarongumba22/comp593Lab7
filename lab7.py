@@ -64,7 +64,7 @@ def print_info(person_info):
 
         bob=i 
         ingre.append(bob)
-    print("My ideal pizza has" ,ingre[0],ingre[1],ingre[2],ingre[3],ingre[4] ,"and",ingre[-1] +".")
+    print("My ideal pizza has" ,ingre[0]+", "+ingre[1]+", "+ ingre[2]+", "+ingre[3]+"," ,"and",ingre[-1] +".")
 
     move_genre= []
     for i in person_info['Movies']:
@@ -72,7 +72,7 @@ def print_info(person_info):
         gen= i['Genre']
         move_genre.append(gen)
     
-    print("I like to watch", move_genre[0],move_genre[1]+move_genre[2] ,"movies.")
+    print("I like to watch", move_genre[0]+", "+move_genre[1]+", "+move_genre[2] ,"movies.")
     
     move_title=[]
     for i in person_info['Movies']:
@@ -80,7 +80,7 @@ def print_info(person_info):
         title= i['Title']
         move_title.append(title)
 
-    print("Some of my favourite are", move_title[0],move_title[1],move_title[2]+".")
+    print("Some of my favourite are", move_title[0]+", "+move_title[1]+" ,"+move_title[2]+".")
 
         
 
